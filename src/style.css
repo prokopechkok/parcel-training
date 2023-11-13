@@ -4,11 +4,17 @@ body {
   padding: 0;
   background-color: cornsilk;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 p {
+  margin: 0;
   display: inline-block;
 }
 input {
@@ -44,24 +50,25 @@ input:focus {
 }
 
 .gallery-list {
-  list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   align-items: flex-end;
+  list-style: none;
 }
 
 .list-item {
   width: calc((100% - 30px) / 4);
-}
-
-.photo-card {
-  border: 1px solid #ccc;
+  /* border: 1px solid lightslategray; */
+  border: none;
   border-radius: 8px;
   overflow: hidden;
 }
+
+/* .photo-card {
+} */
 
 .gallery_link {
   text-decoration: none;
